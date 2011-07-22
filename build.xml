@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ | (C) Copyright Jonathan Harrington 2011. All Rights Reserved.
+ *-->
+<project name="doxygenbrand">
+    <dirname property="doxygenxhtml.dir" file="${ant.file.doxygenbrand}"/>
+
+	<!-- content targets -->
+	<target name="dita2xhtml.doxygen" depends="dita2xhtml">
+		<echo message="Hi from doxygenbrand" />
+		
+		<copy todir="${output.dir}" flatten="true">
+			<fileset dir="${doxygenxhtml.dir}">
+				<include name="css${file.separator}**\*.css"/>
+				<include name="images${file.separator}**"/>
+			</fileset>
+		</copy>
+    </target>
+</project>

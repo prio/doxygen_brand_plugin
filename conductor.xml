@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+ | (C) Copyright Jonathan Harrington 2011. All Rights Reserved.
+ *-->
+<project>
+    <import file="build.xml"/>
+</project>

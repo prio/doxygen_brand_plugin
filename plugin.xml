@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ | (C) Copyright Jonathan Harrington 2011. All Rights Reserved.
+ *-->
+<plugin id="org.dita.brand.doxygen">
+  <feature extension="package.version"
+           value="0.0.1" />
+
+  <feature extension="dita.xsl.xhtml"
+           type="file"
+           value="xsl/dita2xhtml.doxygenImpl.xsl" />
+         
+  <feature extension="dita.conductor.target.relative"
+      value="conductor.xml" type="file"/>
+      
+  <feature extension="dita.conductor.transtype.check" 
+  		   value="xhtml.doxygen,eclipsehelp.doxygen" type="text"/>      
+</plugin>
